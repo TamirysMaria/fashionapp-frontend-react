@@ -1,36 +1,24 @@
-# Fashion App — React Native (Expo)
+# Fashion App Frontend
 
-Aplicativo mobile desenvolvido em React Native utilizando Expo para gerenciamento de um catálogo de produtos de moda, integrado a uma API REST hospedada no Render.
+## Descrição
+
+Aplicação mobile desenvolvida em React Native (Expo) para gerenciamento de um catálogo de produtos de moda, integrada a uma API REST.
 
 ## Estrutura do Projeto
 
 ```text
 FashionApp/
 ├── screens/
-│   ├── HomeScreen.js   → Lista de produtos (catálogo)
-│   └── FormScreen.js   → Cadastro e edição de produtos
+│   ├── HomeScreen.js
+│   └── FormScreen.js
 ├── services/
-│   └── api.js          → Comunicação com a API
-├── App.js              → Configuração da navegação
-├── index.js            → Ponto de entrada da aplicação
+│   └── api.js
+├── App.js
+├── index.js
 ├── app.json
 ├── babel.config.js
 └── package.json
 ```
-
-## Backend
-
-URL Base:
-
-https://fashionapp-backend-orzu.onrender.com/api/entries
-
-### Endpoints
-
-* GET / → Listar todos os produtos
-* GET /:id → Buscar produto por ID
-* POST / → Cadastrar produto
-* PUT /:id → Atualizar produto
-* DELETE /:id → Remover produto
 
 ## Tecnologias Utilizadas
 
@@ -47,7 +35,13 @@ https://fashionapp-backend-orzu.onrender.com/api/entries
 git clone <url-do-repositorio>
 ```
 
-2. Instale as dependências:
+2. Acesse a pasta do projeto:
+
+```bash
+cd FashionApp
+```
+
+3. Instale as dependências:
 
 ```bash
 npm install
@@ -55,13 +49,13 @@ npm install
 
 ## Execução
 
-Inicie o projeto com:
+Para iniciar a aplicação:
 
 ```bash
 npx expo start
 ```
 
-Após iniciar o Expo, utilize um dispositivo físico ou emulador para executar a aplicação.
+Após iniciar o Expo, utilize um dispositivo físico ou emulador para executar o aplicativo.
 
 ## Dependências Principais
 
@@ -71,7 +65,11 @@ Após iniciar o Expo, utilize um dispositivo físico ou emulador para executar a
 * react-native-safe-area-context
 * expo ~52.0.0
 
+* ## Desenvolvedora
+
+**Tamirys Maria Silva da Costa**
+Desenvolvedora do frontend da aplicação Fashion App.
+
+
 ```
 ```
-## Desenvolvedor
-Tamirys Maria
