@@ -1,18 +1,18 @@
 # Fashion App — React Native (Expo)
 
-Aplicativo mobile para gerenciar o catálogo de produtos de moda, conectado ao backend deployado no Render.
+Aplicativo mobile desenvolvido em React Native utilizando Expo para gerenciamento de um catálogo de produtos de moda, integrado a uma API REST hospedada no Render.
 
-## Estrutura do projeto
+## Estrutura do Projeto
 
-```
+```text
 FashionApp/
 ├── screens/
 │   ├── HomeScreen.js   → Lista de produtos (catálogo)
-│   └── FormScreen.js   → Criar / editar produto
+│   └── FormScreen.js   → Cadastro e edição de produtos
 ├── services/
-│   └── api.js          → Chamadas ao backend (GET, POST, PUT, DELETE)
-├── App.js              → Navegação entre telas
-├── index.js            → Entry point do Expo
+│   └── api.js          → Comunicação com a API
+├── App.js              → Configuração da navegação
+├── index.js            → Ponto de entrada da aplicação
 ├── app.json
 ├── babel.config.js
 └── package.json
@@ -20,24 +20,58 @@ FashionApp/
 
 ## Backend
 
-URL base: `https://fashionapp-backend-orzu.onrender.com/api/entries`
+URL Base:
 
-Endpoints:
-- `GET /` — listar todos os produtos
-- `GET /:id` — buscar produto por ID
-- `POST /` — criar produto
-- `PUT /:id` — atualizar produto
-- `DELETE /:id` — excluir produto
+https://fashionapp-backend-orzu.onrender.com/api/entries
+
+### Endpoints
+
+* GET / → Listar todos os produtos
+* GET /:id → Buscar produto por ID
+* POST / → Cadastrar produto
+* PUT /:id → Atualizar produto
+* DELETE /:id → Remover produto
+
+## Tecnologias Utilizadas
+
+* React Native
+* Expo
+* JavaScript
+* React Navigation
 
 ## Instalação
 
+1. Clone o repositório:
+
+```bash
+git clone <url-do-repositorio>
+```
+
+2. Instale as dependências:
+
 ```bash
 npm install
+```
+
+## Execução
+
+Inicie o projeto com:
+
+```bash
 npx expo start
 ```
 
-## Dependências principais
+Após iniciar o Expo, utilize um dispositivo físico ou emulador para executar a aplicação.
 
-- `@react-navigation/native` + `@react-navigation/native-stack` — navegação entre telas
-- `react-native-screens` + `react-native-safe-area-context` — dependências da navegação
-- `expo ~52.0.0`
+## Dependências Principais
+
+* @react-navigation/native
+* @react-navigation/native-stack
+* react-native-screens
+* react-native-safe-area-context
+* expo ~52.0.0
+
+```
+```
+## Desenvolvedor
+Tamirys Maria
